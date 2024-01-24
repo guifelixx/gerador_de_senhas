@@ -1,6 +1,15 @@
 import random
 from customtkinter import *
 from PIL import Image
+import os, sys
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 def senhas():
 
@@ -35,7 +44,7 @@ def copiar_texto():
 interface = CTk()
 interface.title("Gerador de senhas")
 interface.geometry("300x250")
-interface.iconbitmap("images/icon_progam.ico")
+interface.iconbitmap(resource_path("images/icon_progam.ico"))
 interface.resizable(False, False)
 
 set_appearance_mode('system')
@@ -50,7 +59,7 @@ tamanho_senha = CTkEntry(master=interface, placeholder_text='Digite o tamanho da
 tamanho_senha.place(x=53, y=48)
 
 #Botão
-imagem = Image.open("images/password.image.png") #Importando imagem do botão
+imagem = Image.open(resource_path("images/password.image.png")) #Importando imagem do botão
 botao = CTkButton(master=interface, width=100, height=30, text='Gerar senha', command=senhas, corner_radius=32, fg_color="#0000FF",
                   hover_color="#6A0888", border_width=2, image=CTkImage(dark_image=imagem, light_image=imagem))
 botao.place(x=86, y=90)
@@ -68,10 +77,8 @@ label_condicao = CTkLabel(master=interface, textvariable=condicao, width=50, tex
 label_condicao.place(x=28, y=5)
 
 #Botão para copiar texto:
-imagem_copiar = Image.open("images/icon_copiar.png")
+imagem_copiar = Image.open(resource_path("images/icon_copiar.png"))
 botao_copiar = CTkButton(master=interface, command=copiar_texto, text='', width=10, border_width=2, fg_color="#0000FF", hover_color="#6A0888", image=CTkImage(dark_image=imagem_copiar, light_image=imagem_copiar))
 botao_copiar.place(x=130, y=160)
 
 interface.mainloop()
-
-#ARRUMAR A FONTE!!!!
