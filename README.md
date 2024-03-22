@@ -1,21 +1,13 @@
 
-# Gerador de senhas 🔐
+# Password generator 🔐
 
-Esse progama gera senhas de 8 a 15 caracteres aleatoriamente formando uma senha robusta e dificil de se descobrir, nesse montante você encontra: letras maiusculas, letras minisculas, numeros e simbolos.
-
-
-## Autores
-
-- [@guifelixx](https://github.com/guifelixx)
-
+This program generates passwords of 8 to 15 characters randomly, forming a robust and difficult to discover password, in this amount you will find: uppercase letters, lowercase letters, numbers and symbols.
 
 ## Explanation
 
-Assim como meu projeto anterior, usei a biblioteca Tkinter (Na verdade uma versão bem melhor dessa lib que é CustomTkinter). toda a lógica está encubada em funções, e dou vida a essas funções utilizando os atributos que essa lib me proporciona, sendo elas mais lindas e personalizaveis. E obviamente foi feito 100% em python.
+Just like my previous project, I used the Tkinter library (Actually a much better version of this lib which is CustomTkinter). all the logic is encapsulated in functions, and I give life to these functions using the attributes that this lib provides me, making them more beautiful and customizable. And obviously it was made 100% in Python.
 ## Deploy
 
-Para fazer o deploy desse projeto: https://drive.google.com/file/d/1UpZKCkhEWqpBbenblS1D3b_mCtNlmNp7/view?usp=sharing
+To deploy this project: https://drive.google.com/file/d/1UpZKCkhEWqpBbenblS1D3b_mCtNlmNp7/view?usp=sharing
 
-Coloquei no drive porque é um .exe
-
-
+I put it in the drive because it is an .exe
